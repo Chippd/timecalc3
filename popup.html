@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Time Clock Calculator</title>
+		
+			
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+			
+    
+		
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+			
+		
+<!--     <script src="scripts/tracking.js"></script> -->
+    <script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="scripts/moment.min.js"></script>
+    <script type="text/javascript" src="scripts/materialize.min.js"></script>
+
+  </head>
+  <body>
+    <div class='container'>
+
+      <div class="row">
+        <div class="col s12" style="text-align:center">
+        <h5>Time Calculator</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a class="grey-text" href="#timesCalculator">Hours and Minutes</a></li>
+            <li class="tab col s3"><a class="grey-text" href="#shiftsCalculator">Shift Calculator</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="timesCalculator" class="col s12">
+          <form id='times'>
+
+            <div class="col s12 offset-s2 timesRow">
+                <div class="input-field col s4">
+                  <input type="number" class="hours validate" required>
+                  <label>Hours</label>
+                </div>
+                <div class="input-field col s4">
+                  <input  type="number" class="mins validate" required>
+                  <label>Minutes</label>
+                </div>
+            </div>
+
+            <div class="col s12 switchRow">
+              <div class="switch">
+                <label>
+                  <i class='mdi-content-add activeSwitch'></i>
+                  <input type="checkbox" mode='add' class='modeSwitch'>
+                  <span class="lever"></span>
+                  <i class='mdi-content-remove'></i>
+                </label>
+              </div>
+            </div>
+
+            <div class="col s12 offset-s2 timesRow">
+                <div class="input-field col s4">
+                  <input type="number" class="hours validate" required >
+                  <label>Hours</label>
+                </div>
+                <div class="input-field col s4">
+                  <input type="number" class="mins validate" required >
+                  <label>Minutes</label>
+                </div>
+            </div>
+
+            <div class="col s12 timesEquals">
+               <button class="btn-floating btn-large waves-effect waves-light teal" tabindex="0" type='submit' name='action'><i class="mdi-action-view-stream"></i></button>
+            </div>
+
+          </form>
+
+          <div class="col s12 answer">
+            <p></p>
+          </div>
+
+
+        </div>
+        <div id="shiftsCalculator" class="col s12">
+          <div class="col s12 offset-s2 shiftsRow">
+            <div class="input-field col s4">
+              <input type="time" class="shift validate" required>
+            </div>
+            <div class="input-field col s4">
+              <input type="time" class="shift validate" required>
+            </div>
+          </div>
+        </div>
+      
+
+    </div>
+        
+		
+  </body>
+  <script src="scripts/myscript.js"></script>
+</html>
+
